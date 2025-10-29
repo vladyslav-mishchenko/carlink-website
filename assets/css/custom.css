@@ -1,0 +1,8 @@
+.carbox-card__title{
+    overflow: auto;
+    height: auto;
+}
+
+.carbox-card__title .vin{
+    display: block;
+}
