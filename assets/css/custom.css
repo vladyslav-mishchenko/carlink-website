@@ -6,3 +6,115 @@
 .carbox-card__title .vin{
     display: block;
 }
+
+@media (max-width: 600px) {
+  .header-content__wrapper {
+    display: block;
+  }
+}
+
+/* nice select */
+/* Base wrapper for the custom select */
+.nice-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 14px;
+  color: #444;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 10px;
+}
+
+/* Hide the original select */
+.nice-select select {
+  display: none;
+}
+
+/* Styled current selection */
+.nice-select::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #555;
+  border-bottom: 2px solid #555;
+  transform: translateY(-50%) rotate(45deg);
+  pointer-events: none;
+  transition: transform 0.2s ease;
+}
+
+/* Open state arrow rotation */
+.nice-select.open::after {
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+/* Displayed text */
+.nice-select .current {
+  display: block;
+  padding: 10px 40px 10px 12px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Dropdown menu */
+.nice-select .list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: all 0.2s ease;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Show dropdown when open */
+.nice-select.open .list {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Individual option */
+.nice-select .option {
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nice-select .option:hover {
+  background-color: #f2f2f2;
+}
+
+.nice-select .option.selected {
+  background-color: #e6f0ff;
+  font-weight: 500;
+}
+/* end nice select */
+
+.section-hero__content {
+  bottom: 0;
+}
+
+.section-hero__content .uk-h1{
+  font-size: 22px !important;
+}
+
+.product-item .vin{
+  display: block;
+}
