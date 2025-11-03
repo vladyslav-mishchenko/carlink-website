@@ -1,0 +1,253 @@
+/* === Button === */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+/* === Offcanvas === */
+.offcanvas {
+    position: fixed;
+    bottom: 0;
+    z-index: 1050;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    visibility: hidden;
+    background-color: #fff;
+    background-clip: padding-box;
+    outline: 0;
+    transition: transform 0.3s ease-in-out, visibility 0s linear 0.3s;
+}
+
+/* Left side */
+.offcanvas-start {
+    top: 0;
+    left: 0;
+    width: 320px;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    transform: translateX(-100%);
+}
+
+/* Right side */
+.offcanvas-end {
+    top: 0;
+    right: 0;
+    width: 320px;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    transform: translateX(100%);
+}
+
+/* Show state */
+.offcanvas.show {
+    transform: none;
+    visibility: visible;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* === Offcanvas Header === */
+.offcanvas-header {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    ;
+}
+
+.offcanvas-header>.c2 {
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: center;
+}
+
+.offcanvas-title {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.mlanguage .nice-select {
+    width: 50px;
+}
+
+/* === Close Button === */
+.btn-close {
+    background: transparent;
+    border: 0;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    color: #000;
+    opacity: 0.7;
+}
+
+.btn-close:hover {
+    opacity: 1;
+}
+
+/* === Body === */
+.offcanvas-body {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+/* === Backdrop === */
+.offcanvas-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1040;
+}
+
+.offcanvas-backdrop.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* === Basic link styling === */
+.offcanvas-body a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.offcanvas-body a:hover {
+    text-decoration: underline;
+}
+
+/* mobile search */
+.m-vin-search {
+    display: flex;
+    flex-direction: row;
+}
+
+.m-vin-search .c1 {
+    flex-grow: 1;
+}
+
+.m-vin-search .c2 {
+    width: 50px;
+}
+
+.m-vin-search-form input {
+    display: block;
+
+    width: 100%;
+    height: 35px;
+
+    padding: 0 10px;
+
+    border-top: 1px solid #dd0005;
+    border-bottom: 1px solid #dd0005;
+    border-left: 1px solid #dd0005;
+
+    font-size: 16px;
+}
+
+.m-vin-search-form button {
+    display: block;
+    width: 100%;
+    height: 35px;
+    background-color: #dd0005;
+}
+
+.m-vin-search-form button .i {
+    color: #ffffff;
+}
+
+/* end mobile search */
+
+/* mobile menu accordion */
+.m-menu {
+    padding: 50px 0;
+}
+
+.accordion-item {
+    margin: 5px 0;
+    background: #f0f0f0;
+}
+
+.accordion-link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-link-wrapper .accordion-link {
+    text-decoration: none !important;
+    font-size: 16px;
+}
+
+.accordion-link-wrapper .accordion-link:hover {
+    text-decoration: none !important;
+}
+
+.accordion-link-wrapper i {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-link-wrapper i::before {
+    color: #dd0005;
+}
+
+.toggle-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.accordion-link {
+    display: block;
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.accordion-link:hover {}
+
+.accordion-link.active {
+    color: #dd0005;
+}
+
+.accordion-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    padding-left: 15px;
+    background: #f9f9f9;
+    border-left: 3px solid #dd0005;
+}
+
+.menu-link {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+/* end mobile menu accordion */

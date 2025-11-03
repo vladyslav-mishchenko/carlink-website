@@ -1,10 +1,10 @@
-.carbox-card__title{
-    overflow: auto;
-    height: auto;
+.carbox-card__title {
+  overflow: auto;
+  height: auto;
 }
 
-.carbox-card__title .vin{
-    display: block;
+.carbox-card__title .vin {
+  display: block;
 }
 
 @media (max-width: 600px) {
@@ -105,16 +105,81 @@
   background-color: #e6f0ff;
   font-weight: 500;
 }
+
 /* end nice select */
 
 .section-hero__content {
   bottom: 0;
 }
 
-.section-hero__content .uk-h1{
+.section-hero__content .uk-h1 {
   font-size: 22px !important;
 }
 
-.product-item .vin{
+.product-item .vin {
   display: block;
+}
+
+/* header items */
+.header-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+/* end header items */
+
+/* header vin search */
+.header-vin-search-form {}
+
+.header-vin-search-form input {
+  display: block;
+  width: 100%;
+  height: 35px;
+  background-color: #f0f0f0;
+  color: #222222;
+  font-size: 14px;
+
+  margin: 0;
+  padding: 0 10px;
+  border-top: 1px solid #dd0005;
+  border-bottom: 1px solid #dd0005;
+  border-left: 1px solid #dd0005;
+}
+
+.header-vin-search-form button {
+  display: block;
+  width: 100px;
+  height: 35px;
+  background-color: #dd0005;
+  color: #ffffff;
+  font-size: 14px;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.header-vin-search {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-vin-search>.c1 {
+  flex-grow: 1;
+}
+
+.header-vin-search>.c2 {
+  width: 100px;
+}
+
+/* end header vin search */
+
+@media (max-width: 1100px) {
+  .header-items {
+    display: none;
+  }
 }
